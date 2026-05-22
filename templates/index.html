@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <title>Voice AI Appointment Agent</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            background:linear-gradient(135deg,#4facfe,#00f2fe);
+        }
+
+        .container{
+            width:400px;
+            background:white;
+            padding:30px;
+            border-radius:20px;
+            text-align:center;
+            box-shadow:0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        h1{
+            color:#333;
+            margin-bottom:10px;
+            font-size:28px;
+        }
+
+        p{
+            color:#666;
+            margin-bottom:25px;
+        }
+
+        .mic-icon{
+            font-size:70px;
+            margin-bottom:20px;
+        }
+
+        button{
+            background:#007bff;
+            color:white;
+            border:none;
+            padding:15px 30px;
+            border-radius:10px;
+            font-size:18px;
+            cursor:pointer;
+            transition:0.3s;
+        }
+
+        button:hover{
+            background:#0056b3;
+            transform:scale(1.05);
+        }
+
+        #status{
+            margin-top:20px;
+            font-weight:bold;
+            color:#444;
+        }
+
+        audio{
+            margin-top:20px;
+            width:100%;
+        }
+
+        .footer{
+            margin-top:25px;
+            font-size:14px;
+            color:#999;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="mic-icon">
+            🎤
+        </div>
+
+        <h1>Voice AI Agent</h1>
+
+        <p>
+            Book, Cancel, or Reschedule
+            appointments using voice.
+        </p>
+
+        <button onclick="startRecording()">
+            Start Speaking
+        </button>
+
+        <div id="status">
+            Waiting for voice...
+        </div>
+
+        <audio id="audioPlayer" controls></audio>
+
+        <div class="footer">
+            English • Hindi • Tamil
+        </div>
+
+    </div>
+
+    <script src="/static/script.js"></script>
+
+</body>
+</html>

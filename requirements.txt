@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+jinja2
+python-multipart
+openai
+gtts
+openai-whisper
+pydub
+soundfile
+sqlalchemy
+google-genai
+python-dotenv
